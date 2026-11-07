@@ -259,6 +259,7 @@ ul {
   min-height: calc(100vh - var(--nav-h));
   display: grid;
   align-items: end;
+  justify-items: start;
   overflow: hidden;
   color: var(--ink);
 }
@@ -294,19 +295,25 @@ ul {
 .hero-content {
   position: relative;
   z-index: 1;
-  padding: 4.5rem 1rem 4.5rem;
-  max-width: 640px;
-  width: min(100% - 1.25rem, 640px);
-  margin-left: clamp(0.75rem, 2.5vw, 1.25rem);
-  margin-right: auto;
+  justify-self: start;
+  width: min(92vw, 560px);
+  max-width: 560px;
+  margin: 0;
+  padding: 4.5rem 1rem 4.5rem 1.25rem;
+  text-align: left;
   animation: riseIn 0.95s ease both;
 }
 
-/* Keep hero copy left-edged instead of centered like other .container blocks */
+/* Override shared .container centering on the homepage hero */
+.hero .container.hero-content,
 .container.hero-content {
-  margin-inline: unset;
-  margin-left: clamp(0.75rem, 2.5vw, 1.25rem);
-  margin-right: auto;
+  width: min(92vw, 560px);
+  max-width: 560px;
+  margin: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 1.25rem;
+  justify-self: start;
 }
 
 @keyframes riseIn {
