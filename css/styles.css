@@ -294,9 +294,19 @@ ul {
 .hero-content {
   position: relative;
   z-index: 1;
-  padding: 4.5rem 0 4.5rem;
-  max-width: 680px;
+  padding: 4.5rem 1rem 4.5rem;
+  max-width: 640px;
+  width: min(100% - 1.25rem, 640px);
+  margin-left: clamp(0.75rem, 2.5vw, 1.25rem);
+  margin-right: auto;
   animation: riseIn 0.95s ease both;
+}
+
+/* Keep hero copy left-edged instead of centered like other .container blocks */
+.container.hero-content {
+  margin-inline: unset;
+  margin-left: clamp(0.75rem, 2.5vw, 1.25rem);
+  margin-right: auto;
 }
 
 @keyframes riseIn {
