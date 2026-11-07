@@ -4,6 +4,12 @@ Class project site for **StudyBuddy** — a phone-locking study device + campus 
 
 **Team:** Heather Hoang, Leah Loza, Jessica O’Bonna, Erica Skelly
 
+## Live link
+
+**https://jessic-o.github.io/studybuddy-website/**
+
+Submission PDF: `submission/StudyBuddy_Finalized_Website.pdf`
+
 ## Local preview
 
 Open `index.html` in a browser, or from this folder:
